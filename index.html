@@ -98,15 +98,8 @@
       border-bottom: 1px solid var(--black);
     }
 
-    .eyebrow {
-      margin: 0 0 26px;
-      font-size: 13px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-
     .hero h1 {
-      max-width: 900px;
+      max-width: 1180px;
       margin: 0;
       font-family:
         "Tiempos Headline",
@@ -114,14 +107,14 @@
         Georgia,
         "Times New Roman",
         serif;
-      font-size: clamp(54px, 7.2vw, 98px);
+      font-size: clamp(46px, 5.6vw, 76px);
       font-weight: 400;
-      line-height: 0.94;
+      line-height: 1;
       letter-spacing: -0.035em;
     }
 
     .hero-intro {
-      max-width: 650px;
+      max-width: 720px;
       margin: 40px 0 0;
       font-family:
         "Tiempos Headline",
@@ -214,12 +207,17 @@
     }
 
     .force-number {
-      margin: 0 0 18px;
+      margin: 0 0 10px;
       color: var(--black);
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
+      font-family:
+        "Tiempos Headline",
+        "Cormorant Garamond",
+        Georgia,
+        "Times New Roman",
+        serif;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1;
     }
 
     .force-name {
@@ -245,7 +243,7 @@
 
     .force-description p {
       max-width: 660px;
-      margin: 0 0 18px;
+      margin: 0;
       font-family:
         "Tiempos Headline",
         "Cormorant Garamond",
@@ -256,8 +254,8 @@
       line-height: 1.5;
     }
 
-    .force-description p:last-child {
-      margin-bottom: 0;
+    .force-publication {
+      margin-top: 24px !important;
     }
 
     .studies-intro {
@@ -294,6 +292,11 @@
       .hero {
         min-height: auto;
         padding: 82px 0 72px;
+      }
+
+      .hero h1 {
+        font-size: clamp(44px, 12vw, 64px);
+        line-height: 0.98;
       }
 
       .section {
@@ -337,17 +340,12 @@
   <main>
 
     <section class="hero">
-      <p class="eyebrow">
-        The Narrative Forces Doctrine
-      </p>
-
       <h1>
-        Narrative<br />
-        Forces
+        The Narrative Forces Doctrine
       </h1>
 
       <p class="hero-intro">
-        The distinct powers that drive narrative.
+        A series examining the distinct powers that drive narrative.
       </p>
     </section>
 
@@ -394,20 +392,22 @@
             </h2>
 
             <div class="force-description">
-              <p>
-                Pressure builds. Possibilities close. Consequences accumulate.
-              </p>
+              <div class="force-progression">
+                <p>
+                  Pressure builds. Possibilities close. Consequences accumulate.
+                </p>
 
-              <p>
-                Escalation is more than rising conflict, danger, or intensity.
-              </p>
+                <p>
+                  Escalation is more than rising conflict, danger, or intensity.
+                </p>
 
-              <p>
-                It has an order.
-              </p>
+                <p>
+                  It has an order.
+                </p>
+              </div>
 
-              <p>
-                <em>The Laws of Escalation</em> identifies it.
+              <p class="force-publication">
+                <em>THE LAWS OF ESCALATION</em> identifies it.
               </p>
             </div>
 
