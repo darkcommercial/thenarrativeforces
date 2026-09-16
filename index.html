@@ -353,6 +353,36 @@
       margin-top: 12px;
     }
 
+    /* FOLLOW */
+
+    .follow-intro {
+      max-width: 760px;
+    }
+
+    .follow-intro h2 {
+      font-size: clamp(38px, 4.8vw, 60px);
+    }
+
+    .follow-copy {
+      max-width: 680px !important;
+    }
+
+    .subscribe-embed {
+      width: 100%;
+      max-width: 480px;
+      margin-top: 28px;
+      overflow: hidden;
+    }
+
+    .subscribe-embed iframe {
+      display: block;
+      width: 100%;
+      max-width: 480px;
+      height: 150px;
+      border: 0;
+      background: transparent;
+    }
+
     /* FOOTER */
 
     .site-footer {
@@ -431,6 +461,14 @@
         line-height: 28px;
       }
 
+      .subscribe-embed {
+        max-width: 100%;
+      }
+
+      .subscribe-embed iframe {
+        max-width: 100%;
+      }
+
       .site-footer {
         flex-direction: column;
       }
@@ -467,6 +505,7 @@
       <a href="#forces">Forces</a>
       <a href="/evidence/">Evidence</a>
       <a href="/about/">About</a>
+      <a href="#follow">Follow</a>
     </nav>
   </header>
 
@@ -626,6 +665,40 @@
           <a class="text-link" href="/evidence/">
             View Evidence
           </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="follow">
+      <div class="section-grid">
+
+        <p class="section-label">
+          Follow
+        </p>
+
+        <div class="section-content follow-intro">
+
+          <h2>
+            The examination continues.
+          </h2>
+
+          <p class="follow-copy">
+            Receive new Evidence and announcements from The Narrative Forces Doctrine.
+          </p>
+
+          <div class="subscribe-embed">
+            <iframe
+              src="https://narrativeforces.substack.com/embed?transparent=1"
+              width="480"
+              height="150"
+              style="border: 0; background: transparent"
+              frameborder="0"
+              scrolling="no"
+              title="Subscribe to Narrative Forces"
+            ></iframe>
+          </div>
 
         </div>
 
