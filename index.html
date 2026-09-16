@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap"
     rel="stylesheet"
   />
 
@@ -100,23 +100,23 @@
       border-bottom: 1px solid var(--black);
     }
 
-    .hero-mark {
-      display: block;
-      width: 52px;
-      height: auto;
-      margin: 0 0 32px;
+    .hero-identity {
+      width: 100%;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 180px;
+      align-items: center;
+      gap: 80px;
     }
 
     .hero-title {
-      max-width: 1100px;
       margin: 0;
       font-family:
-        "Source Serif 4",
+        "Newsreader",
         Georgia,
         "Times New Roman",
         serif;
       font-weight: 500;
-      line-height: 0.9;
+      line-height: 0.88;
       text-transform: uppercase;
     }
 
@@ -125,19 +125,32 @@
     }
 
     .hero-title-frame {
-      font-size: clamp(38px, 4.25vw, 58px);
-      letter-spacing: 0.045em;
+      font-size: clamp(36px, 3.8vw, 52px);
+      letter-spacing: 0.055em;
     }
 
     .hero-title-primary {
-      margin: 6px 0;
-      font-size: clamp(52px, 6.4vw, 86px);
-      letter-spacing: 0.015em;
+      margin: 7px 0;
+      font-size: clamp(52px, 6.1vw, 82px);
+      letter-spacing: 0.012em;
+      white-space: nowrap;
+    }
+
+    .hero-mark-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-mark {
+      display: block;
+      width: 126px;
+      height: auto;
     }
 
     .hero-intro {
       max-width: 760px;
-      margin: 42px 0 0;
+      margin: 44px 0 0;
       font-family:
         "Cormorant Garamond",
         Georgia,
@@ -176,7 +189,7 @@
     .section-content h2 {
       margin: 0;
       font-family:
-        "Source Serif 4",
+        "Cormorant Garamond",
         Georgia,
         "Times New Roman",
         serif;
@@ -233,7 +246,7 @@
       margin: 0 0 10px;
       color: var(--black);
       font-family:
-        "Source Serif 4",
+        "Cormorant Garamond",
         Georgia,
         "Times New Roman",
         serif;
@@ -246,7 +259,7 @@
       margin: 0;
       color: var(--escalation);
       font-family:
-        "Source Serif 4",
+        "Cormorant Garamond",
         Georgia,
         "Times New Roman",
         serif;
@@ -320,23 +333,32 @@
         padding: 76px 0 72px;
       }
 
-      .hero-mark {
-        width: 44px;
-        margin-bottom: 28px;
+      .hero-identity {
+        grid-template-columns: 1fr;
+        gap: 34px;
       }
 
       .hero-title {
-        line-height: 0.94;
+        line-height: 0.92;
       }
 
       .hero-title-frame {
-        font-size: clamp(32px, 9vw, 46px);
+        font-size: clamp(30px, 8vw, 42px);
       }
 
       .hero-title-primary {
         margin: 5px 0;
-        font-size: clamp(42px, 11.5vw, 62px);
-        letter-spacing: 0.005em;
+        font-size: clamp(39px, 10.5vw, 58px);
+        letter-spacing: 0;
+        white-space: normal;
+      }
+
+      .hero-mark-wrap {
+        justify-content: flex-start;
+      }
+
+      .hero-mark {
+        width: 82px;
       }
 
       .hero-intro {
@@ -385,26 +407,32 @@
 
     <section class="hero">
 
-      <img
-        class="hero-mark"
-        src="/Narrative_Forces_Field_Mark_BLACK.svg"
-        alt=""
-        aria-hidden="true"
-      />
+      <div class="hero-identity">
 
-      <h1 class="hero-title">
-        <span class="hero-title-line hero-title-frame">
-          The
-        </span>
+        <h1 class="hero-title">
+          <span class="hero-title-line hero-title-frame">
+            The
+          </span>
 
-        <span class="hero-title-line hero-title-primary">
-          Narrative Forces
-        </span>
+          <span class="hero-title-line hero-title-primary">
+            Narrative Forces
+          </span>
 
-        <span class="hero-title-line hero-title-frame">
-          Doctrine
-        </span>
-      </h1>
+          <span class="hero-title-line hero-title-frame">
+            Doctrine
+          </span>
+        </h1>
+
+        <div class="hero-mark-wrap">
+          <img
+            class="hero-mark"
+            src="/Narrative_Forces_Field_Mark_BLACK.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
+
+      </div>
 
       <p class="hero-intro">
         A series examining the distinct powers that drive narrative.
