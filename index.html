@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Marcellus&display=swap"
     rel="stylesheet"
   />
 
@@ -111,10 +111,10 @@
     .hero-title {
       margin: 0;
       font-family:
-        "Cinzel",
+        "Marcellus",
         "Times New Roman",
         serif;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 0.93;
       text-transform: uppercase;
     }
@@ -128,22 +128,22 @@
       letter-spacing: 0.045em;
     }
 
-    .hero-title-primary {
+    .hero-forces-row {
+      display: flex;
+      align-items: center;
+      gap: 42px;
       margin: 8px 0;
+    }
+
+    .hero-title-primary {
       font-size: clamp(50px, 5.75vw, 78px);
       letter-spacing: 0.012em;
       white-space: nowrap;
     }
 
-    .hero-doctrine-row {
-      display: flex;
-      align-items: center;
-      gap: 58px;
-    }
-
     .hero-mark {
       display: block;
-      width: 158px;
+      width: 112px;
       height: auto;
       flex: 0 0 auto;
     }
@@ -341,19 +341,19 @@
         font-size: clamp(29px, 7.8vw, 42px);
       }
 
-      .hero-title-primary {
+      .hero-forces-row {
+        gap: 24px;
         margin: 6px 0;
+      }
+
+      .hero-title-primary {
         font-size: clamp(36px, 9.5vw, 54px);
         letter-spacing: 0;
         white-space: normal;
       }
 
-      .hero-doctrine-row {
-        gap: 28px;
-      }
-
       .hero-mark {
-        width: 88px;
+        width: 78px;
       }
 
       .hero-intro {
@@ -383,14 +383,14 @@
     }
 
     @media (max-width: 480px) {
-      .hero-doctrine-row {
+      .hero-forces-row {
         width: 100%;
         justify-content: space-between;
-        gap: 20px;
+        gap: 18px;
       }
 
       .hero-mark {
-        width: 72px;
+        width: 64px;
       }
     }
   </style>
@@ -422,14 +422,10 @@
             The
           </span>
 
-          <span class="hero-title-line hero-title-primary">
-            Narrative Forces
-          </span>
+          <span class="hero-forces-row">
 
-          <span class="hero-doctrine-row">
-
-            <span class="hero-title-line hero-title-frame">
-              Doctrine
+            <span class="hero-title-line hero-title-primary">
+              Narrative Forces
             </span>
 
             <img
@@ -439,6 +435,10 @@
               aria-hidden="true"
             />
 
+          </span>
+
+          <span class="hero-title-line hero-title-frame">
+            Doctrine
           </span>
 
         </h1>
