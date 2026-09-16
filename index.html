@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap"
     rel="stylesheet"
   />
 
@@ -101,22 +101,21 @@
     }
 
     .hero-identity {
-      width: 100%;
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 180px;
-      align-items: center;
-      gap: 80px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: fit-content;
+      max-width: 100%;
     }
 
     .hero-title {
       margin: 0;
       font-family:
-        "Newsreader",
-        Georgia,
+        "Cinzel",
         "Times New Roman",
         serif;
       font-weight: 500;
-      line-height: 0.88;
+      line-height: 0.93;
       text-transform: uppercase;
     }
 
@@ -125,32 +124,33 @@
     }
 
     .hero-title-frame {
-      font-size: clamp(36px, 3.8vw, 52px);
-      letter-spacing: 0.055em;
+      font-size: clamp(38px, 4vw, 54px);
+      letter-spacing: 0.045em;
     }
 
     .hero-title-primary {
-      margin: 7px 0;
-      font-size: clamp(52px, 6.1vw, 82px);
+      margin: 8px 0;
+      font-size: clamp(50px, 5.75vw, 78px);
       letter-spacing: 0.012em;
       white-space: nowrap;
     }
 
-    .hero-mark-wrap {
+    .hero-doctrine-row {
       display: flex;
       align-items: center;
-      justify-content: center;
+      gap: 58px;
     }
 
     .hero-mark {
       display: block;
-      width: 126px;
+      width: 158px;
       height: auto;
+      flex: 0 0 auto;
     }
 
     .hero-intro {
       max-width: 760px;
-      margin: 44px 0 0;
+      margin: 48px 0 0;
       font-family:
         "Cormorant Garamond",
         Georgia,
@@ -333,36 +333,31 @@
         padding: 76px 0 72px;
       }
 
-      .hero-identity {
-        grid-template-columns: 1fr;
-        gap: 34px;
-      }
-
       .hero-title {
-        line-height: 0.92;
+        line-height: 0.96;
       }
 
       .hero-title-frame {
-        font-size: clamp(30px, 8vw, 42px);
+        font-size: clamp(29px, 7.8vw, 42px);
       }
 
       .hero-title-primary {
-        margin: 5px 0;
-        font-size: clamp(39px, 10.5vw, 58px);
+        margin: 6px 0;
+        font-size: clamp(36px, 9.5vw, 54px);
         letter-spacing: 0;
         white-space: normal;
       }
 
-      .hero-mark-wrap {
-        justify-content: flex-start;
+      .hero-doctrine-row {
+        gap: 28px;
       }
 
       .hero-mark {
-        width: 82px;
+        width: 88px;
       }
 
       .hero-intro {
-        margin-top: 36px;
+        margin-top: 38px;
       }
 
       .section {
@@ -384,6 +379,18 @@
 
       .footer-right {
         text-align: left;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-doctrine-row {
+        width: 100%;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .hero-mark {
+        width: 72px;
       }
     }
   </style>
@@ -410,6 +417,7 @@
       <div class="hero-identity">
 
         <h1 class="hero-title">
+
           <span class="hero-title-line hero-title-frame">
             The
           </span>
@@ -418,19 +426,22 @@
             Narrative Forces
           </span>
 
-          <span class="hero-title-line hero-title-frame">
-            Doctrine
-          </span>
-        </h1>
+          <span class="hero-doctrine-row">
 
-        <div class="hero-mark-wrap">
-          <img
-            class="hero-mark"
-            src="/Narrative_Forces_Field_Mark_BLACK.svg"
-            alt=""
-            aria-hidden="true"
-          />
-        </div>
+            <span class="hero-title-line hero-title-frame">
+              Doctrine
+            </span>
+
+            <img
+              class="hero-mark"
+              src="/Narrative_Forces_Field_Mark_BLACK.svg"
+              alt=""
+              aria-hidden="true"
+            />
+
+          </span>
+
+        </h1>
 
       </div>
 
@@ -448,6 +459,7 @@
         </p>
 
         <div class="section-content">
+
           <h2>
             Narrative is not moved by one force.
           </h2>
@@ -462,6 +474,7 @@
           <a class="text-link" href="/about/">
             About the Doctrine
           </a>
+
         </div>
 
       </div>
@@ -475,6 +488,7 @@
         </p>
 
         <div class="section-content force">
+
           <div class="force-inner">
 
             <p class="force-number">
@@ -488,6 +502,7 @@
             <div class="force-description">
 
               <div class="force-progression">
+
                 <p>
                   Pressure builds. Possibilities close. Consequences accumulate.
                 </p>
@@ -499,6 +514,7 @@
                 <p>
                   It has an order.
                 </p>
+
               </div>
 
               <p class="force-publication">
@@ -512,6 +528,7 @@
             </a>
 
           </div>
+
         </div>
 
       </div>
@@ -525,6 +542,7 @@
         </p>
 
         <div class="section-content studies-intro">
+
           <h2>
             The examination continues.
           </h2>
@@ -538,6 +556,7 @@
           <a class="text-link" href="/studies/">
             View Studies
           </a>
+
         </div>
 
       </div>
