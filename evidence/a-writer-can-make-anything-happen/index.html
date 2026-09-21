@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500;1,600;1,700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
     rel="stylesheet"
   />
 
@@ -134,14 +134,14 @@
     .article-title {
       margin: 0;
       font-family:
-        "Cormorant Garamond",
+        "EB Garamond",
         Georgia,
         "Times New Roman",
         serif;
       font-size: clamp(48px, 6vw, 78px);
       font-weight: 500;
       line-height: 0.96;
-      letter-spacing: -0.025em;
+      letter-spacing: -0.02em;
       text-transform: uppercase;
     }
 
@@ -161,75 +161,25 @@
       padding: 76px 0 92px;
     }
 
+    /*
+      Evidence body has one typographic state.
+      The prose and paragraphation establish emphasis.
+    */
+
     .article-body p {
       margin: 0;
       font-family:
-        "Cormorant Garamond",
+        "EB Garamond",
         Georgia,
         "Times New Roman",
         serif;
       font-size: 23px;
+      font-weight: 400;
       line-height: 1.58;
     }
 
     .article-body p + p {
       margin-top: 25px;
-    }
-
-    /*
-      Short sequential paragraphs preserve the manuscript's
-      close rhythm without changing type size or weight.
-    */
-
-    .article-body .tight-sequence {
-      margin: 25px 0;
-    }
-
-    .article-body .tight-sequence p + p {
-      margin-top: 12px;
-    }
-
-    /*
-      Structural movements remain semantically identifiable,
-      but receive no enlarged typography or added emphasis.
-    */
-
-    .article-body .turn,
-    .article-body .finding {
-      margin: 25px 0;
-    }
-
-    .article-body .turn p,
-    .article-body .finding p {
-      font-size: 23px;
-      font-weight: 400;
-      line-height: 1.58;
-    }
-
-    /*
-      Closing sequence is intentionally compact:
-      every short line receives the same single spacing.
-    */
-
-    .article-body .closing-movement {
-      margin-top: 25px;
-    }
-
-    .article-body .closing-movement p {
-      font-size: 23px;
-      font-weight: 400;
-      line-height: 1.58;
-    }
-
-    .article-body .closing-movement p + p {
-      margin-top: 12px;
-    }
-
-    .article-body .final-line {
-      margin-top: 12px !important;
-      font-size: 23px !important;
-      font-weight: 400;
-      line-height: 1.58 !important;
     }
 
     /* RELATED VOLUME */
@@ -274,12 +224,12 @@
       display: block;
       margin: 0 0 8px 2px;
       font-family:
-        "Cormorant Garamond",
+        "EB Garamond",
         Georgia,
         "Times New Roman",
         serif;
       font-size: 28px;
-      font-weight: 700;
+      font-weight: 600;
       line-height: 1;
     }
 
@@ -287,7 +237,7 @@
       margin: 0;
       color: var(--escalation);
       font-family:
-        "Cormorant Garamond",
+        "EB Garamond",
         Georgia,
         "Times New Roman",
         serif;
@@ -302,7 +252,7 @@
       max-width: 620px;
       margin: 22px 0 0;
       font-family:
-        "Cormorant Garamond",
+        "EB Garamond",
         Georgia,
         "Times New Roman",
         serif;
@@ -341,21 +291,21 @@
     .follow-content h2 {
       margin: 0;
       font-family:
-        "Cormorant Garamond",
+        "EB Garamond",
         Georgia,
         "Times New Roman",
         serif;
       font-size: clamp(38px, 4.8vw, 58px);
       font-weight: 400;
       line-height: 1.02;
-      letter-spacing: -0.025em;
+      letter-spacing: -0.02em;
     }
 
     .follow-copy {
       max-width: 680px;
       margin: 28px 0 0;
       font-family:
-        "Cormorant Garamond",
+        "EB Garamond",
         Georgia,
         "Times New Roman",
         serif;
@@ -434,17 +384,9 @@
         padding: 58px 0 72px;
       }
 
-      .article-body p,
-      .article-body .turn p,
-      .article-body .finding p,
-      .article-body .closing-movement p {
+      .article-body p {
         font-size: 21px;
         line-height: 1.55;
-      }
-
-      .article-body .final-line {
-        font-size: 21px !important;
-        line-height: 1.55 !important;
       }
 
       .related-volume {
@@ -505,15 +447,8 @@
         font-size: clamp(38px, 12vw, 52px);
       }
 
-      .article-body p,
-      .article-body .turn p,
-      .article-body .finding p,
-      .article-body .closing-movement p {
+      .article-body p {
         font-size: 20px;
-      }
-
-      .article-body .final-line {
-        font-size: 20px !important;
       }
 
       .related-title {
@@ -594,21 +529,17 @@
         A writer can make anything happen.
       </p>
 
-      <div class="tight-sequence">
+      <p>
+        The door opens. A stranger enters. A gun fires.
+      </p>
 
-        <p>
-          The door opens. A stranger enters. A gun fires.
-        </p>
+      <p>
+        A secret surfaces. A marriage ends. A kingdom falls.
+      </p>
 
-        <p>
-          A secret surfaces. A marriage ends. A kingdom falls.
-        </p>
-
-        <p>
-          The dead return. A city burns. The world ends.
-        </p>
-
-      </div>
+      <p>
+        The dead return. A city burns. The world ends.
+      </p>
 
       <p>
         The freedom of authorship is the power to decide what becomes true.
@@ -702,13 +633,9 @@
         The story escalates without its stakes rising at all.
       </p>
 
-      <div class="turn">
-
-        <p>
-          Now let a stranger burst into the jury room wielding a gun.
-        </p>
-
-      </div>
+      <p>
+        Now let a stranger burst into the jury room wielding a gun.
+      </p>
 
       <p>
         The jurors dive beneath the table, rush the door, or try to overpower
@@ -726,13 +653,9 @@
         their own lives instead of deciding whether to end the boy’s.
       </p>
 
-      <div class="turn">
-
-        <p>
-          Now change only the gunman's relationship to the deliberation.
-        </p>
-
-      </div>
+      <p>
+        Now change only the gunman's relationship to the deliberation.
+      </p>
 
       <p>
         The accused boy's brother comes to the courthouse and forces the jurors
@@ -741,17 +664,13 @@
         The jurors’ fight for survival now depends upon their verdict.
       </p>
 
-      <div class="tight-sequence">
+      <p>
+        The blank page permits anything.
+      </p>
 
-        <p>
-          The blank page permits anything.
-        </p>
-
-        <p>
-          The written page contains consequences.
-        </p>
-
-      </div>
+      <p>
+        The written page contains consequences.
+      </p>
 
       <p>
         The knife is on the table. Fifteen seconds have become forty-one.
@@ -769,13 +688,9 @@
         conditions of their own requiring resolution.
       </p>
 
-      <div class="finding">
-
-        <p>
-          The difference is inheritance.
-        </p>
-
-      </div>
+      <p>
+        The difference is inheritance.
+      </p>
 
       <p>
         To continue the Escalation, new pressure must become answerable to the
@@ -795,13 +710,9 @@
         Eight's refusal continues the deliberation.
       </p>
 
-      <div class="turn">
-
-        <p>
-          Now change only why the gunman enters.
-        </p>
-
-      </div>
+      <p>
+        Now change only why the gunman enters.
+      </p>
 
       <p>
         This time, he knows no one in the room.
@@ -838,14 +749,10 @@
         defending another man’s right to keep his certainty.
       </p>
 
-      <div class="finding">
-
-        <p>
-          New pressure does not have to emerge from the conditions already
-          established. It has to inherit their consequences.
-        </p>
-
-      </div>
+      <p>
+        New pressure does not have to emerge from the conditions already
+        established. It has to inherit their consequences.
+      </p>
 
       <p>
         Causality fails to explain the difference.
@@ -871,13 +778,9 @@
         escalate it.
       </p>
 
-      <div class="finding">
-
-        <p>
-          Inheritance can.
-        </p>
-
-      </div>
+      <p>
+        Inheritance can.
+      </p>
 
       <p>
         The writer can send a stranger through any door. Choice brings him
@@ -901,13 +804,9 @@
         They do not create the principles those events reveal.
       </p>
 
-      <div class="turn">
-
-        <p>
-          The same progression appears without an author.
-        </p>
-
-      </div>
+      <p>
+        The same progression appears without an author.
+      </p>
 
       <p>
         One lie conceals a betrayal. Protecting that lie requires another.
@@ -932,34 +831,30 @@
         the consequences already accumulated.
       </p>
 
-      <div class="closing-movement">
+      <p>
+        Escalation belongs to Life before it belongs to Narrative. Stories
+        give its progression a form that can be seen.
+      </p>
 
-        <p>
-          Escalation belongs to Life before it belongs to Narrative. Stories
-          give its progression a form that can be seen.
-        </p>
+      <p>
+        The craft is the evidence.
+      </p>
 
-        <p>
-          The craft is the evidence.
-        </p>
+      <p>
+        The Force is the finding.
+      </p>
 
-        <p>
-          The Force is the finding.
-        </p>
+      <p>
+        Escalation is a Narrative Force.
+      </p>
 
-        <p>
-          Escalation is a Narrative Force.
-        </p>
+      <p>
+        A writer can make anything happen.
+      </p>
 
-        <p>
-          A writer can make anything happen.
-        </p>
-
-        <p class="final-line">
-          Once it happens, the page is no longer blank.
-        </p>
-
-      </div>
+      <p>
+        Once it happens, the page is no longer blank.
+      </p>
 
     </article>
 
@@ -1015,7 +910,7 @@
         <div class="follow-content">
 
           <h2>
-            The examination continues.
+            Follow the Doctrine.
           </h2>
 
           <p class="follow-copy">
