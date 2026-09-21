@@ -176,49 +176,49 @@
       margin-top: 25px;
     }
 
-    .article-body .opening-sequence {
-      margin: 38px 0 40px;
+    /*
+      Short sequential paragraphs preserve the manuscript's
+      close rhythm without changing type size or weight.
+    */
+
+    .article-body .tight-sequence {
+      margin: 25px 0;
     }
 
-    .article-body .opening-sequence p {
-      font-size: 25px;
-      line-height: 1.46;
-    }
-
-    .article-body .opening-sequence p + p {
+    .article-body .tight-sequence p + p {
       margin-top: 12px;
     }
 
-    .article-body .turn {
-      margin: 52px 0;
-    }
+    /*
+      Structural movements remain semantically identifiable,
+      but receive no enlarged typography or added emphasis.
+    */
 
-    .article-body .turn p {
-      font-size: 29px;
-      line-height: 1.34;
-    }
-
-    .article-body .turn p + p {
-      margin-top: 8px;
-    }
-
+    .article-body .turn,
     .article-body .finding {
-      margin: 56px 0;
+      margin: 25px 0;
     }
 
+    .article-body .turn p,
     .article-body .finding p {
-      font-size: 31px;
-      font-weight: 500;
-      line-height: 1.28;
+      font-size: 23px;
+      font-weight: 400;
+      line-height: 1.58;
     }
+
+    /*
+      Closing sequence is intentionally compact:
+      every short line receives the same single spacing.
+    */
 
     .article-body .closing-movement {
-      margin-top: 52px;
+      margin-top: 25px;
     }
 
     .article-body .closing-movement p {
-      font-size: 26px;
-      line-height: 1.46;
+      font-size: 23px;
+      font-weight: 400;
+      line-height: 1.58;
     }
 
     .article-body .closing-movement p + p {
@@ -226,10 +226,10 @@
     }
 
     .article-body .final-line {
-      margin-top: 40px !important;
-      font-size: 30px !important;
-      font-weight: 500;
-      line-height: 1.3 !important;
+      margin-top: 12px !important;
+      font-size: 23px !important;
+      font-weight: 400;
+      line-height: 1.58 !important;
     }
 
     /* RELATED VOLUME */
@@ -237,7 +237,7 @@
     .related-volume {
       border-top: 1px solid var(--black);
       border-bottom: 1px solid var(--black);
-      padding: 68px 0 72px;
+      padding: 48px 0 52px;
     }
 
     .related-grid {
@@ -256,8 +256,8 @@
 
     .related-content {
       position: relative;
-      max-width: 760px;
-      padding-left: 38px;
+      max-width: 660px;
+      padding-left: 28px;
     }
 
     .related-content::before {
@@ -266,19 +266,19 @@
       top: 0;
       bottom: 0;
       left: 0;
-      width: 4px;
+      width: 3px;
       background: var(--escalation);
     }
 
     .related-number {
       display: block;
-      margin: 0 0 12px 4px;
+      margin: 0 0 8px 2px;
       font-family:
         "Cormorant Garamond",
         Georgia,
         "Times New Roman",
         serif;
-      font-size: 38px;
+      font-size: 28px;
       font-weight: 700;
       line-height: 1;
     }
@@ -291,28 +291,28 @@
         Georgia,
         "Times New Roman",
         serif;
-      font-size: clamp(42px, 5vw, 62px);
+      font-size: 34px;
       font-weight: 400;
-      line-height: 0.98;
-      letter-spacing: 0.035em;
+      line-height: 1.02;
+      letter-spacing: 0.025em;
       text-transform: uppercase;
     }
 
     .related-copy {
-      max-width: 660px;
-      margin: 30px 0 0;
+      max-width: 620px;
+      margin: 22px 0 0;
       font-family:
         "Cormorant Garamond",
         Georgia,
         "Times New Roman",
         serif;
-      font-size: 22px;
+      font-size: 19px;
       line-height: 1.5;
     }
 
     .text-link {
       display: inline-block;
-      margin-top: 32px;
+      margin-top: 24px;
       padding-bottom: 3px;
       border-bottom: 1px solid currentColor;
       font-size: 12px;
@@ -434,44 +434,23 @@
         padding: 58px 0 72px;
       }
 
-      .article-body p {
+      .article-body p,
+      .article-body .turn p,
+      .article-body .finding p,
+      .article-body .closing-movement p {
         font-size: 21px;
         line-height: 1.55;
       }
 
-      .article-body .opening-sequence p {
-        font-size: 23px;
-      }
-
-      .article-body .turn {
-        margin: 44px 0;
-      }
-
-      .article-body .turn p {
-        font-size: 26px;
-      }
-
-      .article-body .finding {
-        margin: 46px 0;
-      }
-
-      .article-body .finding p {
-        font-size: 28px;
-      }
-
-      .article-body .closing-movement {
-        margin-top: 44px;
-      }
-
-      .article-body .closing-movement p {
-        font-size: 24px;
-      }
-
       .article-body .final-line {
-        font-size: 27px !important;
+        font-size: 21px !important;
+        line-height: 1.55 !important;
       }
 
-      .related-volume,
+      .related-volume {
+        padding: 44px 0 48px;
+      }
+
       .follow {
         padding: 58px 0;
       }
@@ -483,7 +462,19 @@
       }
 
       .related-content {
-        padding-left: 28px;
+        padding-left: 24px;
+      }
+
+      .related-number {
+        font-size: 26px;
+      }
+
+      .related-title {
+        font-size: 32px;
+      }
+
+      .related-copy {
+        font-size: 19px;
       }
 
       .subscribe-embed {
@@ -514,28 +505,19 @@
         font-size: clamp(38px, 12vw, 52px);
       }
 
-      .article-body p {
+      .article-body p,
+      .article-body .turn p,
+      .article-body .finding p,
+      .article-body .closing-movement p {
         font-size: 20px;
       }
 
-      .article-body .opening-sequence p {
-        font-size: 22px;
-      }
-
-      .article-body .turn p {
-        font-size: 24px;
-      }
-
-      .article-body .finding p {
-        font-size: 26px;
-      }
-
-      .article-body .closing-movement p {
-        font-size: 23px;
-      }
-
       .article-body .final-line {
-        font-size: 26px !important;
+        font-size: 20px !important;
+      }
+
+      .related-title {
+        font-size: 29px;
       }
     }
   </style>
@@ -612,7 +594,7 @@
         A writer can make anything happen.
       </p>
 
-      <div class="opening-sequence">
+      <div class="tight-sequence">
 
         <p>
           The door opens. A stranger enters. A gun fires.
@@ -759,7 +741,7 @@
         The jurors’ fight for survival now depends upon their verdict.
       </p>
 
-      <div class="turn">
+      <div class="tight-sequence">
 
         <p>
           The blank page permits anything.
