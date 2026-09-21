@@ -123,12 +123,30 @@
     }
 
     .article-force {
-      margin: 0 0 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      width: min(430px, 100%);
+      margin: 0 auto 28px;
       color: var(--escalation);
       font-size: 12px;
       font-weight: 700;
       letter-spacing: 0.2em;
       text-transform: uppercase;
+    }
+
+    .article-force::before,
+    .article-force::after {
+      content: "";
+      flex: 1 1 auto;
+      height: 1px;
+      background: var(--escalation);
+    }
+
+    .article-force-text {
+      flex: 0 0 auto;
+      white-space: nowrap;
     }
 
     .article-title {
@@ -369,6 +387,8 @@
       }
 
       .article-force {
+        width: min(360px, 100%);
+        gap: 14px;
         margin-bottom: 22px;
       }
 
@@ -447,6 +467,11 @@
         width: calc(100% - 36px);
       }
 
+      .article-force {
+        width: 100%;
+        gap: 12px;
+      }
+
       .article-title {
         font-size: clamp(36px, 10.5vw, 48px);
       }
@@ -496,7 +521,9 @@
       <div class="article-identity">
 
         <p class="article-force">
-          Escalation
+          <span class="article-force-text">
+            Escalation
+          </span>
         </p>
 
         <h1 class="article-title">
