@@ -225,10 +225,10 @@
 
     .doctrine-proposition {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 74px minmax(0, 1fr);
+      grid-template-columns: max-content 74px max-content;
       gap: 24px;
       align-items: center;
-      max-width: 820px;
+      max-width: 100%;
     }
 
     .doctrine-pole {
@@ -493,6 +493,17 @@
 
     /* MOBILE */
 
+      @media (min-width: 761px) and (max-width: 1100px) {
+      .doctrine-proposition {
+        grid-template-columns: minmax(0, 1fr) 54px minmax(0, 1fr);
+        gap: 18px;
+      }
+
+      .doctrine-pole {
+        font-size: clamp(26px, 3.3vw, 40px);
+      }
+    }
+    
     @media (max-width: 760px) {
       .site-header {
         align-items: flex-start;
